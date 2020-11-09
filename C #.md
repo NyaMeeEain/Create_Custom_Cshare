@@ -24,3 +24,35 @@ namespace ClickOnce
     }
 }
 ```
+```
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Diagnostics;
+
+namespace ClickOnce
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            var si = new ProcessStartInfo
+            {
+                FileName = @"C:\Windows\System32\notepad.exe",
+                Arguments = @"C:\Users\NyaMeeEain\Desktop\test.txt"
+            };
+
+            var proc = new Process
+            {
+                StartInfo = si
+            };
+
+            proc.Start();
+            proc.WaitForExit();
+            proc.Dispose();
+        }
+    }
+}
+
+```
