@@ -89,3 +89,28 @@ namespace ClickOnce
 }
 
 ```
+
+```
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace ClickOnce
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            System.Diagnostics.Process Process = new System.Diagnostics.Process();
+            
+            Process.StartInfo.FileName= "notepad.exe";
+            Process.Start();
+
+
+
+    }
+    }
+}
+```
