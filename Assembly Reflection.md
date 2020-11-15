@@ -1,4 +1,11 @@
-# Assembly Reflection
+# Assembly Load and  Reflection
+
+**The Primary objective  of the System.Assembly. Methods Load() and LoadFrom() is  to load the assembly from the String in order to read the assembly from memory which  does not need to write into disk that may allow us to circumvent to evade.**
+
+Technically The Assembly.Load() method to create an object that contains  the metadata of mstsc.exe as  about the assembly mstsc.exe.
+
+The System.Reflection namespace is the process of runtime  to inspect metadata  In order to  execute the System.Assembly class
+
 
 ### Assembly.Load.cs
 ```
