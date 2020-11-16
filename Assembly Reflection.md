@@ -59,14 +59,16 @@ namespace MstscApplication
 using System;
 using System.Reflection;
 namespace MstscApplication
-//C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:Execution Execution.cs
+
+//C:\Users\NyaMeeEain\Desktop\Assembly.Load>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:Execution.exe  Execution.cs
+
 {
     public class Program
     {
         public static void Main()
         {
-//C:\Users\NyaMeeEain\Desktop\Assembly.Load>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:testcalc.exe test.cs
-            string base64str = "";
+
+            string base64str = "<Base64 Valule of mstsc.exe>";
             byte[] buffer = Convert.FromBase64String(base64str);
 
             Assembly assembly = Assembly.Load(buffer);          
