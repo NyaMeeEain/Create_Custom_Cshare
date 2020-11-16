@@ -1,5 +1,3 @@
-
-```
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,14 +21,14 @@ namespace DemoAssembly
         {
             static void Main(string[] args)
             {
-                var si = new ProcessStartInfo
+                var Execution = new ProcessStartInfo
                 {
                     FileName = @"C:\Windows\System32\notepad.exe",
                     Arguments = @"C:\Users\NyaMeeEain\Desktop\test.txt"
                 };
                 var proc = new Process
                 {
-                    StartInfo = si
+                    StartInfo = Execution
                 };
                 proc.Start();
                 proc.WaitForExit();
@@ -39,4 +37,3 @@ namespace DemoAssembly
         }
     }
 }
-```
