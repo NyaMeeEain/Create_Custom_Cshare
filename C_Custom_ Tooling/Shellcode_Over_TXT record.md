@@ -45,6 +45,6 @@ int main()
 
 
 
-* [DnsQuery_W function]: <https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w/> "Optional title"
-* [Rastamouse ] (https://www.zeropointsecurity.co.uk/red-team-ops)
-* [dirkjanm ] (https://github.com/fox-it/adconnectdump)
+
+* [DnsQuery_W function] (https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w)
+* [Windows Shellcode Execution Techniques] (https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques)
