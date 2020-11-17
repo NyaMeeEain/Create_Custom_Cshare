@@ -44,4 +44,5 @@ int main()
 
 
 * [DnsQuery_W function] (https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w)
+* [Memory Protection] (https://docs.microsoft.com/en-us/windows/win32/memory/memory-protection-constants)
 * [Windows Shellcode] (https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques)
