@@ -40,11 +40,8 @@ int main()
 	shellcode();
 }
 ```
-
-
-
-
+# References
 
 
 * [DnsQuery_W function] (https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w)
-* [Windows Shellcode Execution Techniques] (https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques)
+* [Windows Shellcode] (https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques)
