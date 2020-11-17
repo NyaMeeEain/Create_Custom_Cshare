@@ -45,4 +45,4 @@ int main()
 
 
 
-[DnsQuery_W function]: <https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w/>
+* [DnsQuery_W function]: <https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w/>
