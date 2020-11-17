@@ -40,6 +40,6 @@ int main()
 	shellcode();
 }
 ```
-[Relative link](<./a3af6d902a74a0afd1c2d79aadc9bb3f> "Optional title")
-https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w
-[Reference link ID]: <https://example.com/>
+
+
+[DnsQuery_W function]: <https://docs.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsquery_w/>
