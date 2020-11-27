@@ -1,4 +1,4 @@
-AMSI Bypassing along with System.Management.Automation.Runspaces which doesn't requeire the powershell.exe to execute powershell commands.
+The AMSI Bypassing along with System.Management.Automation.Runspaces which doesn't requeire the powershell.exe to execute powershell commands.
 The Powershell.exe is just interpret of .NET assembly System.Management.Automation.dll to execute OS Command and invoke PowerShell commands.
 System.Management.Automation.dll file is loaded when powershell.exe open up. hence I do not rely on powershell.exe to execute OS command and Invoke powershell command, 
 because We can write our own interpreter to execucate any OS Command without having powershell.exe. in conclusion if someone had asked me that how Do we prevent from powershell base attack.I woulnd have recommend blocking System.Management.Automation.dll like I mention above The Powershell.exe is just interpret of .NET assembly System.Management.Automation.dll to execute OS Command.
