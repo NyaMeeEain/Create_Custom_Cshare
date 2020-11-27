@@ -43,7 +43,7 @@ namespace AmsiScan
             }
         }
 
-        //Importing The Necessary WInAPI to Load 
+        //Importing The Necessary WInAPI to Load the LoadLibrary other related to system function.
 
         [DllImport("kernel32.dll")]
         public static extern IntPtr LoadLibrary(string name);
