@@ -4,7 +4,7 @@ System.Management.Automation.dll file is loaded when powershell.exe open up. hen
 because We can write our own interpreter to execucate any OS Command without having powershell.exe.
 
 
-**This AMSI Patching Techniquie is heavy reliance on rastamouse Techniques.
+**This AMSI Patching Techniquie is heavy reliance on rastamouse Techniques**
 ```
 using System;
 using System.Runtime.InteropServices;
