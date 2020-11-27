@@ -2,6 +2,9 @@ AMSI Bypassing along with System.Management.Automation.Runspaces which doesn't r
 The Powershell.exe is just interpret of .NET assembly System.Management.Automation.dll to execute OS Command and invoke PowerShell commands.
 System.Management.Automation.dll file is loaded when powershell.exe open up. hence I do not rely on powershell.exe to execute OS command and Invoke powershell command, 
 because We can write our own interpreter to execucate any OS Command without having powershell.exe.
+
+
+**This AMSI Patching Techniquie is heavy reliance on rastamouse Techniques.
 ```
 using System;
 using System.Runtime.InteropServices;
