@@ -5,7 +5,7 @@ System.Management.Automation.dll file is loaded when powershell.exe open up. hen
 because We can write our own interpreter to execucate any OS Command without having powershell.exe. in conclusion if someone had asked me that how Do we prevent from powershell base attack.I woulnd have recommend blocking System.Management.Automation.dll like I mention above The Powershell.exe is just interpret of .NET assembly System.Management.Automation.dll to execute OS Command.
 
 
-**This AMSI Patching Techniquie is heavy reliance on rastamouse's Techniques**
+**This AMSI Patching Techniquie is heavy reliance on rastamouse's Techniques,there is something to keep in mind that the technique I utilized is being detected by most an Enpoint solution.**
 
 
 ```
