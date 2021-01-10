@@ -3,7 +3,6 @@ The Powershell.exe is just interpret of .NET assembly System.Management.Automati
 System.Management.Automation.dll file is loaded when powershell.exe open up. hence I do not rely on powershell.exe to execute OS command and Invoke powershell command, 
 because We can write our own interpreter to execucate any OS Command without having powershell.exe.
 
-![Image of Yaktocat](https://raw.githubusercontent.com/NyaMeeEain/Infrastructure-Assessment/master/Images/PS_WT.PNG)
 
 ```
 using System;
